@@ -27,7 +27,8 @@ Loose coupling and separation of controls allow for more targeted development an
 - **Great portability**, welcome github/gitlab page
 [Jamstack](https://jamstack.org/) sites are pre-generated. That means that you can host them from a wide variety of hosting services and have greater ability to move them to your preferred host. Any simple static hosting solution should be able to serve a [Jamstack](https://jamstack.org/) site.
 
-[Excellent book on Jamstack](https://www.netlify.com/pdf/oreilly-modern-web-development-on-the-jamstack.pdf)
+- [Excellent book on Jamstack](https://www.netlify.com/pdf/oreilly-modern-web-development-on-the-jamstack.pdf)
+- [Excellent video introducing Jamstack](https://vimeo.com/163522126)
 
 ## The future is highly distributed
 
