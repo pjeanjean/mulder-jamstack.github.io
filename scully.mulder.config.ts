@@ -9,7 +9,7 @@ setPluginConfig("md", { enableSyntaxHighlighting: true });
 const tocOptions: TocConfig = {
     blogAreaSelector: "#blog-content", // where to search for TOC headings
     insertSelector: "#toc", // where to insert the TOC
-    level: ["h2", "h3"], // what heading levels to include
+    level: ["h1", "h2", "h3"], // what heading levels to include
     trailingSlash: true, // add trailing slash before the anker ('#')
     scrollIntoViewOnClick: true, // add event to each link that scrolls into view on click:
     // onclick="document.getElementById('target-id').scrollIntoView()"
