@@ -1,6 +1,6 @@
 {
     "no-duplicate-heading": { "siblings_only": true},
-    "line-length": { "line_length": 500 },
+    "line-length": { "line_length": 1000 },
     "single-h1":false,
     "no-inline-html": false
 }

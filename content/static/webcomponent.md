@@ -5,8 +5,7 @@ slug: webcomponent
 backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
 ---
 
-<div id="toccontent"></div>
-<div id="toc"></div>
+<div style=" border:1px dotted black;" id="toc"></div>
 
 # What is *Web Components* ?
 

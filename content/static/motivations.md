@@ -4,21 +4,22 @@ title: Mulder motivations
 slug: motivations
 backgroundImage: 'url(assets/img/574152.png)'
 ---
+<div style=" border:1px dotted black;" id="toc"></div>
 
 # Embrace Jamstack
 
 > Documentation highly inspired from [here](https://jamstack.org/)
 
-The [Jamstack architecture](https://jamstack.org/) has many benefits, whether you’re building a large e-commerce site, SaaS application, conference website or personal blog/site.
+The [Jamstack architecture](https://jamstack.org/) has many benefits, whether you’re building a large e-commerce site, SaaS application, conference website or personal blog/site. 
 
 - **Better Performance**
-Why wait for pages to build on the fly when you can generate them at deploy time? When it comes to minimizing the time to first byte, nothing beats pre-built files served over a CDN. Stop the use of WP please :smiley: 
+Why wait for pages to build on the fly when you can generate them at deploy time? When it comes to minimizing the time to first byte, nothing beats pre-built files served over a CDN. Stop the use of WP please 😀
 
 - **Higher Security**
-With server-side processes abstracted into microservice APIs, surface areas for attacks are reduced. You can also leverage the domain expertise of specialist third-party services. Stop the use of WP please :smiley: 
+With server-side processes abstracted into microservice APIs, surface areas for attacks are reduced. You can also leverage the domain expertise of specialist third-party services. Stop the use of WP please 😀
 
 - **Cheaper, Easier Scaling**
-When your deployment amounts to a stack of files that can be served anywhere, scaling is a matter of serving those files in more places. CDNs are perfect for this, and often include scaling in all of their plans. 
+When your deployment amounts to a stack of files that can be served anywhere, scaling is a matter of serving those files in more places. CDNs are perfect for this, and often include scaling in all of their plans.
 
 - **Better Developer Experience**
 Loose coupling and separation of controls allow for more targeted development and debugging, and the expanding selection of CMS options for site generators remove the need to maintain a separate stack for content and marketing.
@@ -54,6 +55,7 @@ The work was done during the build, so now the generated site is stable and can 
 - ...
 
 ### Cons
+
 - Developing a new plugin that consume micro-services is a bit paintful
 - Do not fully embrace the notion of [WebComponents](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 

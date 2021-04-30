@@ -6,6 +6,8 @@ slug: componentpublications
 backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
 ---
 
+<div style=" border:1px dotted black;" id="toc"></div>
+
 To continue to understand this notion of a software component, let's imagine that you want to create a page that has dynamic behaviour. For example, this page consumes data from a service available on the Web, an API that allows you to obtain the publications of an author and on the fly creates a wordcloud from the words contained in the title and summary of these publications and provides a layout of this list of publications. 
 
 ## step 1: create this new component

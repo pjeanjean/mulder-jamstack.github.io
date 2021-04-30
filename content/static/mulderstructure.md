@@ -5,6 +5,8 @@ slug: mulderstructure
 backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
 ---
 
+<div style=" border:1px dotted black;" id="toc"></div>
+
 ## Understanding the site layout
 
 

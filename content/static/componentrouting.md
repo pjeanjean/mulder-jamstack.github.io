@@ -5,6 +5,9 @@ slug: componentrouting
 backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
 ---
 
+<div style=" border:1px dotted black;" id="toc"></div>
+
+
 > Documentation highly inspired from [here](https://www.smashingmagazine.com/2018/11/a-complete-guide-to-routing-in-angular/)
 
 ## Introducing Angular Router

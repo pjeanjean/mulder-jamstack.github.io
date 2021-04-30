@@ -2296,3 +2296,44 @@ Content file "./content/static/scully.md" has no content!Content file "./content
 Received Kill commandClosed servers
 
 Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------No configuration for route "/teaching/:slug" found. SkippingNo configuration for route "/d/:cat/:slug" found. Skipping
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------No configuration for route "/teaching/:slug" found. SkippingNo configuration for route "/d/:cat/:slug" found. Skipping
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------No configuration for route "/teaching/:slug" found. SkippingNo configuration for route "/d/:cat/:slug" found. Skipping
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------No configuration for route "/teaching/:slug" found. SkippingNo configuration for route "/d/:cat/:slug" found. Skipping
+
+
+Received Kill commandClosed servers
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
