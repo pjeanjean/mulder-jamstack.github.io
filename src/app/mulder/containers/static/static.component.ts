@@ -9,14 +9,19 @@ import { map, pluck } from "rxjs/operators";
     styleUrls: ["./static.component.scss"],
 })
 export class StaticComponent implements OnInit {
-    $blogPostMetadata!: any;
+    post!: any;
 
     constructor(
-        private activatedRoute: ActivatedRoute,
+//        private activatedRoute: ActivatedRoute,
         private scully: ScullyRoutesService
     ) {}
 
     ngOnInit(): void {
+        this.scully.getCurrent().subscribe((e) => {
+            console.log(e);
+            this.post = e;
+        });
+        /*
         this.$blogPostMetadata = combineLatest([
             this.activatedRoute.params.pipe(pluck("slug")),
             this.scully.available$,
@@ -24,6 +29,6 @@ export class StaticComponent implements OnInit {
             map(([slug, routes]) =>
                 routes.find((route) => route.route === `/s/${slug}`)
             )
-        );
+        );*/
     }
 }

@@ -2,7 +2,9 @@ import {
     ChangeDetectionStrategy,
     Component,
     Input,
+    OnChanges,
     OnInit,
+    SimpleChanges,
 } from "@angular/core";
 import { DomSanitizer, SafeStyle } from "@angular/platform-browser";
 
@@ -12,7 +14,7 @@ import { DomSanitizer, SafeStyle } from "@angular/platform-browser";
     templateUrl: "./main-header.component.html",
     styleUrls: ["main-header.component.scss"],
 })
-export class MainHeaderComponent implements OnInit {
+export class MainHeaderComponent implements OnInit, OnChanges {
     @Input() backgroundImage!: string;
     @Input() heading!: string;
     @Input() subHeading!: string;
@@ -22,6 +24,11 @@ export class MainHeaderComponent implements OnInit {
     safeBackgroudImage!: SafeStyle;
 
     constructor(private domSanitizer: DomSanitizer) {}
+    ngOnChanges(changes: SimpleChanges): void {
+        this.safeBackgroudImage = this.domSanitizer.bypassSecurityTrustStyle(
+            this.backgroundImage
+        );
+    }
     ngOnInit() {
         this.safeBackgroudImage = this.domSanitizer.bypassSecurityTrustStyle(
             this.backgroundImage

@@ -1,4 +1,4 @@
-<mulder-layout *ngIf="$blogPostMetadata | async as post">
+<mulder-layout *ngIf="post">
     <mulder-main-header [backgroundImage]="post?.backgroundImage" [heading]="post?.title" [subHeading]="post?.subTitle" [meta]="post?.meta" [siteHeading]="true"></mulder-main-header>
     <article>
         <div class="container">
