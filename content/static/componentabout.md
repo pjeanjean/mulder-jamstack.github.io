@@ -110,4 +110,4 @@ export const ROUTES: Routes = [
 This addition indicates that it is necessary to load the *AboutComponent* component of the Mulder module when someone arrive on the */about* route
 
 The result is visible [here](/about)
-The complete source code of this component is visible [here]()
+The source code of this component is visible [here](https://github.com/mulder-jamstack/mulder-jamstack.github.io/tree/src/src/app/mulder/containers/about)

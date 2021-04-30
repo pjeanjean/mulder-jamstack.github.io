@@ -158,4 +158,4 @@ A bit of CSS ultimately makes it look better.
 Let us manage the routing to load the *PublicationsComponent* component of the Mulder module when someone arrive on the */publications* route
 
 The result is visible [here](/publications)
-The complete source code of this component is visible [here]()
+The complete source code of this component is visible [here](https://github.com/mulder-jamstack/mulder-jamstack.github.io/tree/src/src/app/mulder/containers/publications)
