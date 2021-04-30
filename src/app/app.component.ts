@@ -18,7 +18,10 @@ export class AppComponent {
                 while (snapshot.firstChild !== null) {
                     snapshot = snapshot.firstChild;
                 }
-                this.titleService.setTitle(snapshot.data.title || "Mulder: Empowering the JAMStack with DSLs");
+                this.titleService.setTitle(
+                    snapshot.data.title ||
+                        "Mulder: Empowering the JAMStack with DSLs"
+                );
             });
     }
 }
