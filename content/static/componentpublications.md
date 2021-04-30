@@ -3,7 +3,7 @@ published: true
 title: Learning through example
 subTitle: a more complex component
 slug: componentpublications
-backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
+backgroundImage: 'url(assets/img/77982.jpg)'
 ---
 
 <div style=" border:1px dotted black;" id="toc"></div>

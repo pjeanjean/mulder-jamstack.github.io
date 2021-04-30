@@ -3,7 +3,7 @@ published: true
 title: Learning through example
 subTitle: a simple component
 slug: componentabout
-backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
+backgroundImage: 'url(assets/img/77982.jpg)'
 ---
 
 To illustrate how Angular works, let's imagine that we want to add a page to your mulder website. You will then generate a new component. 

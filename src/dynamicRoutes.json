@@ -51,11 +51,11 @@
     },
     {
         "path": "blog",
-        "menupath": "markup/Static blog"
+        "menupath": "markup/Static blog demo"
     },
     {
         "path": "s/motivations",
-        "menupath": "markup/Static MD sample"
+        "menupath": "markup/Static MD demo"
     },
     {
         "path": "s/dynamicmd",
@@ -64,7 +64,7 @@
 
     {
         "path": "d/teaching/secuweb",
-        "menupath": "markup/Dynamic MD sample",
+        "menupath": "markup/Dynamic MD demo",
         "title": "Demo Hackmd",
         "subTitle": "Demo Hackmd",
         "meta": ["demo", "dynamic", "md"],
