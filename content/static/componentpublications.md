@@ -10,11 +10,11 @@ backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
 
 To continue to understand this notion of a software component, let's imagine that you want to create a page that has dynamic behaviour. For example, this page consumes data from a service available on the Web, an API that allows you to obtain the publications of an author and on the fly creates a wordcloud from the words contained in the title and summary of these publications and provides a layout of this list of publications. 
 
-## step 1: create this new component
+## Step 1: create this new component
 
 You can always use angular cli for this. 
 
-## step 2: access angular's http service
+## Step 2: access angular's http service
 
 Use angular's dependency injection mechanism to access a service to make http requests to third party services. Angular provides in its standard library a [http service](https://angular.io/guide/http) that can be used.
 

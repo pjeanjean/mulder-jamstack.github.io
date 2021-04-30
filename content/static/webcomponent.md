@@ -106,7 +106,7 @@ Angular framework is embedded with original MVC but it’s more of an MVVM softw
 Its framework uses the MVVM(Model-View-ViewModel) architecture better than an MVC (Model-View-Controller) one. The MVVM model supports two-way data binding between View and ViewModel. This allows the automatic propagation to change within ViewModel’s state to the view. Typically, ViewModel uses the observer model to inform changes to the ViewModel model to model.
 
 <p align="center">
-<img src="assets/img/angular/angular2.jpeg" width="70%" />
+<img src="assets/img/angular/angular2.jpeg" width="50%" />
 </p>
 
 Furthermore, it only asks to divide the app and takes care of everything else. Therefore, Angular and MVVM (Model-View-View-Model) design structure are quite similar.
