@@ -1,0 +1,20 @@
+# GitHub Actions docs
+# https://help.github.com/en/articles/about-github-actions
+# https://help.github.com/en/articles/workflow-syntax-for-github-actions
+
+name: Scully Publish
+
+on:
+  push:
+    branches:
+      - src
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: cmgriffing/scully-gh-pages-action@v9
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: master
