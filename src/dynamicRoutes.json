@@ -7,7 +7,7 @@
     },
     {
         "path": "s/motivations",
-        "menupath": "component/Motivations",
+        "menupath": "Motivations",
         "orderpath" : 2
 
     },
