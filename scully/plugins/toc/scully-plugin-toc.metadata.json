@@ -1,0 +1,1 @@
+{"__symbolic":"module","version":4,"metadata":{"getTocPlugin":{"__symbolic":"error","message":"Lambda not supported","line":13,"character":28,"module":"./lib/index"},"TocConfig":{"__symbolic":"interface"},"TocPluginName":"toc"},"origins":{"getTocPlugin":"./lib/index","TocConfig":"./lib/interfaces","TocPluginName":"./lib/constants"},"importAs":"scully-plugin-toc"}

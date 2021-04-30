@@ -1,0 +1,98 @@
+[
+
+    {
+        "path": "",
+        "menupath": "home",
+        "orderpath" : 1
+    },
+    {
+        "path": "s/motivations",
+        "menupath": "component/Motivations",
+        "orderpath" : 2
+
+    },
+    {
+        "path": "s/webcomponent",
+        "menupath": "component/Undertanding the notion of Web component",
+        "orderpath" : 3
+    },
+    {
+        "path": "s/mulderstructure",
+        "menupath": "component/Undertanding the mulder page structure"
+    },
+    {
+        "path": "s/componentabout",
+        "menupath": "component/Learning through example: a simple component"
+    },
+    {
+        "path": "about",
+        "menupath": "component/A simple angular component: About page"
+    },
+    {
+        "path": "s/componentpublications",
+        "menupath": "component/Learning through example: a more complex component"
+    },
+    {
+        "path": "publications",
+        "menupath": "component/A more complex angular component: Publications pages"
+    },
+    {
+        "path": "s/componentrouting",
+        "menupath": "component/Understanding routing"
+    },
+    {
+        "path": "foo",
+        "menupath": "component/Routing to an error page"
+    },
+    {
+        "path": "s/scully",
+        "menupath": "markup/Understanding Scully and project structure",
+        "orderpath" : 4
+    },
+    {
+        "path": "blog",
+        "menupath": "markup/Static blog"
+    },
+    {
+        "path": "s/research",
+        "menupath": "markup/Static MD sample"
+    },
+    {
+        "path": "s/dynamicmd",
+        "menupath": "markup/Understanding dynamic md"
+    },
+
+    {
+        "path": "d/teaching/secuweb",
+        "menupath": "markup/Dynamic MD sample",
+        "title": "Demo Hackmd",
+        "subTitle": "Demo Hackmd",
+        "meta": ["demo", "dynamic", "md"],
+        "mdsource": "https://hackmd.diverse-team.fr/D9nr78AzSX2V9i5EOJ6hzA",
+        "tocrootselector": "#cours",
+        "tocselector": ["h1","h2","h3","h4"],
+        "toctitle": "Plan"
+    },
+    {
+        "path": "s/flexibility",
+        "menupath": "Flexibility/Configure Static VS Dynamic",
+        "orderpath" : 5
+    },
+    {
+        "path": "s/whydsl",
+        "menupath": "DSL/Why using DSL",
+        "orderpath" : 6
+    },
+    {
+        "path": "s/dslsurvey",
+        "menupath": "DSL/DSL1: markup syntax for surveyjs"
+    },
+    {
+        "path": "s/dslconfagenda",
+        "menupath": "DSL/DSL2: a DSL for a conference agenda"
+    },
+    {
+        "path": "s/dsldesign",
+        "menupath": "DSL/Design your own DSL and embed it in Mulder/Scully"
+    }
+]

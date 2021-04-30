@@ -1,0 +1,12 @@
+<mulder-layout *ngIf="$blogPostMetadata | async as post">
+    <mulder-main-header [backgroundImage]="post?.backgroundImage" [heading]="post?.title" [subHeading]="post?.subTitle" [meta]="post?.meta" [siteHeading]="true"></mulder-main-header>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mx-auto">
+                    <scully-content></scully-content>
+                </div>
+            </div>
+        </div>
+    </article>
+</mulder-layout>

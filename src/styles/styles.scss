@@ -1,0 +1,164 @@
+// Import Clean Blog
+@import "mulder/mulder.scss";
+
+// Import Prism
+@import 'prism.scss';
+@import '~prismjs/plugins/toolbar/prism-toolbar.css';
+/* check node_modules/prismjs/themes/ for the available themes */
+@import '~prismjs/themes/prism-tomorrow';
+
+pre {
+	background: #2d2d2d;
+    padding: 1.5em;
+	border-radius: .3em;
+	white-space: normal;
+    line-height: 1.5;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.full-background {
+    background-color: $gray-800;
+    width: 100vw;
+    min-height: 100vh;
+    padding-bottom: 10rem;
+}
+
+#mainNav .btn {
+    font-size: 0.75rem;
+    padding: 0.75rem 1rem;
+}
+
+#wordcloud {
+
+    @include media-breakpoint-down(sm) {
+//        background-image: url(/asssets/img/wordcloud-small.svg);
+        height: 150px;
+    }
+    @include media-breakpoint-up(sm) {
+ //       background-image: url(/asssets/img/wordcloud-medium.svg);
+        height: 200px;
+    }
+    @include media-breakpoint-up(lg) {
+  //      background-image: url(/asssets/img/wordcloud-large.svg);
+        height: 300px;
+    }
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#research-axes {
+    .icon-label { margin-top: 1.5em;
+        h4 { font-size: 1.2em; }
+    }
+
+    .icon-item { margin: 20px 0; }
+}
+.preview-item {
+    margin: 20px 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: .25rem;
+    padding: 1em;
+}
+
+.preview-section {
+    margin: 30px 0;
+
+    .side-icon {
+        top: 10%;
+    }
+}
+
+.pubButton {
+    margin: 0px 5px;
+
+}
+.sv_header {
+    background-color: #fff;
+}
+
+.sv_main .sv_container .sv_header {
+    text-align: center;
+  }
+
+  /* You can add global styles to this file, and also import other style files */
+  #video {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+  /*    width:320px;
+    height:240px;
+    line-height:0;*/
+  }
+
+  #photo {
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px black;
+    height:240px;
+    width:320px;
+  /*    height:240px;
+    line-height:0;*/
+
+  }
+
+  #canvas {
+    display:none;
+  }
+
+  .camera {
+    width: 340px;
+    display:inline-block;
+  }
+
+  .output {
+    width: 340px;
+    display:inline-block;
+  }
+
+  #startbutton {
+    display:block;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:40px;
+    background-color: rgba(0, 150, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+  }
+
+  #sendbutton {
+    display:block;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:36px;
+    background-color: rgba(0, 150, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    color: rgba(255, 255, 255, 1.0);
+  }
+
+  .contentarea {
+    font-size: 16px;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    width: 760px;
+  }
+
+
+h1,
+h2,
+h3 {
+    margin-top: 1 em;
+}

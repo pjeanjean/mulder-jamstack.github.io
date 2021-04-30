@@ -1,0 +1,74 @@
+{
+  "_from": "scully-plugin-toc",
+  "_id": "scully-plugin-toc@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Fq8bExL8tWiXjDadhD9/KgmrsYgGNcgd4oLd+bvCwFprEltqGzCnKk+0AK6gJG1A5Vwwdf6nP+zV6BPYEOovLg==",
+  "_location": "/scully-plugin-toc",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "scully-plugin-toc",
+    "name": "scully-plugin-toc",
+    "escapedName": "scully-plugin-toc",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/scully-plugin-toc/-/scully-plugin-toc-2.0.0.tgz",
+  "_shasum": "9d683bf192424486aa08b0abdabbd686584c4c3d",
+  "_spec": "scully-plugin-toc",
+  "_where": "/home/barais/git/barais.github.io",
+  "author": {
+    "name": "Danny Koppenhagen",
+    "email": "mail@d-koppenhagen.de",
+    "url": "https://d-koppenhagen.de"
+  },
+  "bugs": {
+    "url": "https://github.com/d-koppenhagen/scully-plugin-toc/issues",
+    "email": "mail@d-koppenhagen.de"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "jsdom": "^16.4.0",
+    "tslib": "^2.0.3"
+  },
+  "deprecated": false,
+  "description": "this plugin for scully provides a postRenderer to generate a table of contents for the rendered route content",
+  "es2015": "fesm2015/scully-plugin-toc.js",
+  "esm2015": "esm2015/scully-plugin-toc.js",
+  "fesm2015": "fesm2015/scully-plugin-toc.js",
+  "homepage": "https://github.com/d-koppenhagen/scully-plugin-toc",
+  "keywords": [
+    "scully",
+    "scully-plugin",
+    "scully-plugin-registry",
+    "toc",
+    "postRenderer",
+    "angular",
+    "ssr",
+    "ssg",
+    "JAMStack"
+  ],
+  "license": "MIT",
+  "main": "bundles/scully-plugin-toc.umd.js",
+  "metadata": "scully-plugin-toc.metadata.json",
+  "module": "fesm2015/scully-plugin-toc.js",
+  "name": "scully-plugin-toc",
+  "peerDependencies": {
+    "@angular/common": "^10.0.0 || ^11.0.0 || ^12.0.0-0",
+    "@angular/core": "^10.0.0 || ^11.0.0 || ^12.0.0-0",
+    "@scullyio/scully": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-koppenhagen/scully-plugin-toc.git"
+  },
+  "sideEffects": false,
+  "typings": "scully-plugin-toc.d.ts",
+  "version": "2.0.0"
+}

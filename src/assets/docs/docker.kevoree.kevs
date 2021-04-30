@@ -1,0 +1,10 @@
+add host : DockerNode/5.1.0
+add host.nginx : DockerNode/5.1.0
+add sync : WSGroup/5.1.0
+
+attach host sync
+
+set host.commitRepo = 'heads'
+set host.nginx.image = 'nginx'
+set sync.master = 'host'
+

@@ -1,0 +1,9 @@
+<mulder-layout>
+    <mulder-main-header backgroundImage='url("assets/img/dolphins4.jpg")' heading="DemoSurveyJS"
+        subHeading="Show the use of a DSL to configure a survey" [siteHeading]="true">
+    </mulder-main-header>
+    <div class="container">    <survey [json]="json" (submitSurvey)="sendData($event)" (submitFinalSurvey)="sendFinalData($event)"></survey>
+    </div>
+
+
+</mulder-layout>

@@ -1,0 +1,11 @@
+<mulder-layout *ngIf="post">
+    <mulder-main-header [backgroundImage]="post?.backgroundImage || defaultBackground" [heading]="post?.title" [subHeading]="post?.subTitle" [meta]="post?.meta?.join(', ')"></mulder-main-header>
+    <article>
+        <div class="container">
+            <div class="row">
+                <div id="blog-content" class="col-lg-12 col-md-12 mx-auto">
+                    <scully-content></scully-content>
+                </div>
+            </div>
+        </div>
+    </article></mulder-layout>

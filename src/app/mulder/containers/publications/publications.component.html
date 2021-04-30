@@ -1,0 +1,88 @@
+<mulder-layout>
+    <mulder-main-header backgroundImage='url("assets/img/Publications-Header.jpg")' heading="Publications"
+        [siteHeading]="true">
+    </mulder-main-header>
+    <section id="research-axes" class="py-5 bg-info text-light">
+        <div class="content">
+            <div class="container">
+                <div class="row justify-content-center align-items-stretch items">
+                    <div class="icon-item col-md-3 d-flex flex-column">
+                        <div class="col justify-content-between flex-column header">
+                            <div class="row image justify-content-center align-items-center">
+                                <fa-icon class="fa-4x fa-inverse" [icon]='["fas", "infinity"]' stackItemSize="4x"></fa-icon>
+                            </div>
+                            <div class="icon-label row justify-content-center text-center">
+                                <h4 class="mb-3 text-light">DevOps for distributed and heterogeneous systems</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-item col-md-3 d-flex flex-column">
+                        <div class="col justify-content-between flex-column header">
+                            <div class="row image justify-content-center align-items-center">
+                                <fa-icon class="fa-4x fa-inverse" [icon]='["fas", "project-diagram"]' stackItemSize="4x"></fa-icon>
+                            </div>
+                            <div class="icon-label row justify-content-center text-center">
+                                <h4 class="mb-3 text-light">Modeling and Language Engineering</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-item col-md-3 d-flex flex-column">
+                        <div class="col justify-content-between flex-column header">
+                            <div class="row image justify-content-center align-items-center">
+                                <fa-icon class="fa-4x fa-inverse" [icon]='["fas", "check-double"]' stackItemSize="4x"></fa-icon>
+                               </div>
+                            <div class="icon-label row justify-content-center text-center">
+                                <h4 class="mb-3 text-light">Advanced testing</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-item col-md-3 d-flex flex-column">
+                        <div class="col justify-content-between flex-column header">
+                            <div class="row image justify-content-center align-items-center">
+                                <fa-icon class="fa-4x fa-inverse" [icon]='["fas", "sliders-h"]' stackItemSize="4x"></fa-icon>
+                            </div>
+                            <div class="icon-label row justify-content-center text-center">
+                                <h4 class="mb-3 text-light">Variability Engineering</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+        <div class="container py-5 overlay">
+            <div id="page-content">
+                <div id="wordcloud" class="container">
+                    <angular-d3-cloud
+                    [data]="data"
+                    [width]="large"
+                    [height]="height"
+                    [padding]="3"
+                    [font]="FONT"
+                    [rotate]="0"
+                    [autoFill]="true"
+                    [fillMapper]="color"
+                  ></angular-d3-cloud>
+
+                </div>
+                <div *ngFor="let year of years" >
+                <h2 class="text-light bg-info py-2 px-2">{{year}}</h2>
+                <div *ngFor="let doc of docsPerYear.get(year)" class="publication preview-item">
+                    <h4>{{doc.title_s}}</h4>
+                    <h5>{{doc.label_s | author:doc.title_s}}</h5>
+                    <h6>{{doc.label_s | descbib:doc.title_s}}</h6>
+                    <a class="pubButton btn btn-outline-info rounded" [href]="doc.uri_s"
+                        target="_blank">Details</a>
+                        <a *ngIf="doc.fileMain_s" class="pubButton btn btn-outline-info rounded" [href]="doc.fileMain_s"
+                        target="_blank">pdf</a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+</mulder-layout>
