@@ -8,9 +8,9 @@ backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
 <div id="toccontent"></div>
 <div id="toc"></div>
 
-# What is Web Component ?
+# What is *Web Components* ?
 
-> Web Components is a suite of different technologies allowing you to create reusable custom elements — with their functionality encapsulated away from the rest of your code — and utilize them in your web apps. (Source: MDN)
+> *Web Components* is a suite of different technologies allowing you to create reusable custom elements — with their functionality encapsulated away from the rest of your code — and utilize them in your web apps. (Source: MDN)
 
 ## What make a web component ?
 
