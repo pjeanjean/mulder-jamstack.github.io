@@ -94,7 +94,6 @@ Si vous fournissez un service personnalisé dans la section "providers" de @Comp
 `);
 
         const s = JSON.parse(eval(s1));
-        console.log(s);
         // Random pages
         const init = s.pages.shift();
         this.shuffleArray(s.pages);
