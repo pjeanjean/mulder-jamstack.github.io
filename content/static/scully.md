@@ -24,9 +24,7 @@ Scully can be easily integrated with an existing Angular project using a simple 
 
 Scully explores the route structure of your Angular application and uses that to create a list of routes. Then it generates a index.html for each route, pre-rendering each page in your app to plain HTML & CSS, and creates a static version of it. If you have 1000 routes in your application, it will create 1000 html files.
 
-<p align="center">
-<img src="/assets/img/scully/scullyworkflow.png" width="70%" />
-</p>
+<img class="mx-auto d-block rounded-lg" src="/assets/img/scully/scullyworkflow.png" width="70%" />
 
 Once your application is pre-rendered, it will appear on the user’s view; they will not have to wait until all the JavaScript files are loaded to keep engaging with the website.
 
@@ -155,9 +153,7 @@ In the current version of Mulder we have developed a simple modular application 
 - **mulder** : Core module that contains some components for this website
 - **app.module**: Composite module for assembling all the modules
 
-<p align="center">
-<img src="assets/img/components/mulderstructure.png" width="80%" />
-</p>
+<img class="mx-auto d-block rounded-lg" src="assets/img/components/mulderstructure.png" width="100%" />
 
 
 In these modules, there are the following components.
