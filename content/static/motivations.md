@@ -35,9 +35,7 @@ Loose coupling and separation of controls allow for more targeted development an
 
 [Jamstack](https://jamstack.org/) is the new standard architecture for the web. Using Git workflows and modern build tools, pre-rendered content is served to a CDN and made dynamic through APIs and serverless functions. It is for example easy to use github actions to build and deploy the front. Technologies in the stack include JavaScript frameworks, Static Site Generators, Headless CMSs, CI/CD and CDNs.
 
-<p align="center" style="background-color:black;">
-<img src="https://d33wubrfki0l68.cloudfront.net/b7d16f7f3654fb8572360301e60d76df254a323e/385ec/img/svg/architecture.svg" width="70%" />
-</p>
+<img class="mx-auto d-block rounded-lg" style="background-color:black;" src="https://d33wubrfki0l68.cloudfront.net/b7d16f7f3654fb8572360301e60d76df254a323e/385ec/img/svg/architecture.svg" width="70%" />
 
 The work was done during the build, so now the generated site is stable and can be hosted without servers which might require patching, updating and maintain.
 
@@ -103,21 +101,20 @@ As a result, github, gitlab or hackmd could become your [headless CMS](https://j
 If you want to try Mulder, it is important to understand the following concepts
 
 - Step 1: Understanding the notion of Web Components
-  - Step 1.1: Web component and angular component
-  - Step 1.2: Component and page layout in *Mulder*
-  - Step 1.3: A simple example of a Web component
-  - Step 1.4: A more complex example of a Web component
-  - Step 1.5: Angular and routing
+  - Step 1.1: [Web component and angular component](/s/webcomponent)
+  - Step 1.2: [Component and page layout in *Mulder*](/s/componentabout)
+  - Step 1.3: [A simple example of a Web component](/s/componentabout)
+  - Step 1.4: [A more complex example of a Web component](/s/componentpublications)
+  - Step 1.5: [Angular and routing](/s/componentrouting)
 
-- Step 2: Scully and Jamstack
-  - Step 2.1: Understanding Scully and the structure of a project using scully
-  - Step 2.2: Scully: markdown as a markup syntax
-  - Step 2.3: A component to consume markdown dynamically
+- Step 2: Scully and Jamstack: [Understanding Scully and the structure of a project using scully](/s/scully)
 
 - Step 3: Dynamic vs static rendering
+  - Step 3.1: [Dynamic rendering vs static rendering](/s/flexibility)
+  - Step 3.2: [A component to consume markdown dynamically](/s/dynamicmd))
 
 - Step 4: DSLs as a markup language for editing web-app content
-  - Step 4.1: Why DSLs as markup languages? why now?
-  - Step 4.2: A markup language for surveyjs
-  - Step 4.3: A markup language for defining a conference agenda
-  - Step 4.4: Defining your own DSL
+  - Step 4.1: [Why DSLs as markup languages? why now?](/s/whydsl)
+  - Step 4.2: [A markup language for surveyjs](/s/dslsurvey)
+  - Step 4.3: [A markup language for defining a conference agenda](/s/dslconfagenda)
+  - Step 4.4: [Defining your own DSL](/s/dsldesign)

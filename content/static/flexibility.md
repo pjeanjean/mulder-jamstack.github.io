@@ -9,9 +9,7 @@ backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
 
 In the jamstack classical vision, content defined through markup is statically rendered during the CI/CD phase and dynamic contents are consumed through connections to APIs provided by a set of microservices available on the WEB.
 
-<p align="center" style="background-color:black;">
-<img src="https://d33wubrfki0l68.cloudfront.net/b7d16f7f3654fb8572360301e60d76df254a323e/385ec/img/svg/architecture.svg" width="70%" />
-</p>
+<img class="mx-auto d-block rounded-lg" style="background-color:black;" src="https://d33wubrfki0l68.cloudfront.net/b7d16f7f3654fb8572360301e60d76df254a323e/385ec/img/svg/architecture.svg" width="70%" />
 
 This boundary is often quite blurred in practice. Let's take a very concrete example. The Markdown language is often seen as a markup language compiled in a JamStack approach during the the CI/CD process. For my part, I use [HackMD](https://hackmd.io) to share my lab exercises.
 During a lab, there may be additional information to bring to students, typos to fix, and factual errors to correct.
