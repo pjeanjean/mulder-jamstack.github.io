@@ -9,10 +9,8 @@ backgroundImage: 'url(assets/img/77982.jpg)'
 
 ## Understanding the site layout
 
-
-The layout is composed of a set of angular components. 
+The layout is composed of a set of angular components.
 So in the example provided, each page is composed of the following components, the *mulder-layout* component, which contains the *mulder-main-header* component and a specific component depending on the page.
-
 
 ```html
 <mulder-layout>
@@ -23,9 +21,7 @@ So in the example provided, each page is composed of the following components, t
 </mulder-layout>
 ```
 
-
-The mulder-layout component consists of the *mulder-top-nav components*, the content of the *mulder-layout component* and the *mulder-footer* component. 
-
+The mulder-layout component consists of the *mulder-top-nav components*, the content of the *mulder-layout component* and the *mulder-footer* component.
 
 ```html
 <mulder-top-nav></mulder-top-nav>
@@ -33,13 +29,14 @@ The mulder-layout component consists of the *mulder-top-nav components*, the con
 <mulder-footer></mulder-footer>
 ```
 
-If we play with the composition by hand, each mulder page is composed of the following components. 
-- a *mulder-top-nav component*, 
-- a *mulder-main-header* component, 
-- a page-specific component, 
-- and a *mulder-footer* component. 
+If we play with the composition by hand, each mulder page is composed of the following components.
 
-See an example of the derived template. 
+- a *mulder-top-nav component*,
+- a *mulder-main-header* component,
+- a page-specific component,
+- and a *mulder-footer* component.
+
+See an example of the derived template.
 
 ```html
 <mulder-top-nav></mulder-top-nav>
@@ -53,7 +50,7 @@ See an example of the derived template.
 
 ```
 
-The template for the mulder-main-header component is as follows. 
+The template for the mulder-main-header component is as follows.
 
 ```html
 <header class="masthead" [style.background-image]="safeBackgroudImage">
@@ -80,8 +77,7 @@ The template for the mulder-main-header component is as follows.
 </ng-template>
 ```
 
-Its component class is as follows. 
-
+Its component class is as follows.
 
 ```ts
 import {
@@ -115,7 +111,7 @@ export class MainHeaderComponent implements OnInit {
 }
 ```
 
-Still if we perform a part of the composition, we will get this kind of web page. *mulder-top-nav* and *mulder-footer* should also be replaced by their respective templates. 
+Still if we perform a part of the composition, we will get this kind of web page. *mulder-top-nav* and *mulder-footer* should also be replaced by their respective templates.
 
 ```html
 <mulder-top-nav></mulder-top-nav>
@@ -140,12 +136,11 @@ Still if we perform a part of the composition, we will get this kind of web page
 <mulder-footer></mulder-footer>
 ```
 
-The template of any scully website could be fully revisited. 
-
+The template of any scully website could be fully revisited.
 
 ## Understanding the modules organisation
 
-To improve the structuring of the Mulder application, it is structured along 6 modules. 
+To improve the structuring of the Mulder application, it is structured along 7 modules.
 
 - error
 - icons
@@ -158,7 +153,6 @@ To improve the structuring of the Mulder application, it is structured along 6 m
 <p align="center">
 <img src="assets/img/components/mulderstructure.png" width="100%" />
 </p>
-
 
 ## Understanding specific components and plugin
 

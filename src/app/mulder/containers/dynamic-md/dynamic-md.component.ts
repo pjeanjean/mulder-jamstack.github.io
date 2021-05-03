@@ -156,7 +156,13 @@ export class DynamicMdComponent
                                     level &&
                                     level < previousTag
                                 ) {
-                                    toc += "</ul>";
+                                    for (
+                                        let j = 0;
+                                        j < previousTag - level;
+                                        j++
+                                    ) {
+                                        toc += "</ul>";
+                                    }
                                 }
                                 toc += baseLiEl;
                                 previousTag = level;

@@ -8,7 +8,7 @@
                     <a class="nav-link"  style="cursor: pointer;" [id]="mainMenuEntry" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
                       {{mainMenuEntry}}
                     </a>
-                    <div ngbDropdownMenu class="dropdown-menu"  [attr.aria-labelledby]="mainMenuEntry">
+                    <div  ngbDropdownMenu class="dropdown-menu"  (click)="isMenuCollapsed = !isMenuCollapsed" [attr.aria-labelledby]="mainMenuEntry">
                       <a *ngFor="let doc of mainMenuMap.get(mainMenuEntry)" class="dropdown-item" href="#" routerLink="{{'/'+ doc.path}}" >{{doc?.menupath.split('/')[1]}}</a>
                     </div>
                     </li>

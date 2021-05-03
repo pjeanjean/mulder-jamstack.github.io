@@ -58,13 +58,18 @@
         "menupath": "markup/Static MD demo"
     },
     {
+        "path": "s/flexibility",
+        "menupath": "Flexibility/Configure Static VS Dynamic",
+        "orderpath" : 5
+    },
+    {
         "path": "s/dynamicmd",
-        "menupath": "markup/Understanding dynamic md"
+        "menupath": "Flexibility/Understanding dynamic md"
     },
 
     {
         "path": "d/teaching/secuweb",
-        "menupath": "markup/Dynamic MD demo",
+        "menupath": "Flexibility/Dynamic MD demo",
         "title": "Demo Hackmd",
         "subTitle": "Demo Hackmd",
         "meta": ["demo", "dynamic", "md"],
@@ -72,11 +77,6 @@
         "tocrootselector": "#cours",
         "tocselector": ["h1","h2","h3","h4"],
         "toctitle": "Plan"
-    },
-    {
-        "path": "s/flexibility",
-        "menupath": "Flexibility/Configure Static VS Dynamic",
-        "orderpath" : 5
     },
     {
         "path": "s/whydsl",

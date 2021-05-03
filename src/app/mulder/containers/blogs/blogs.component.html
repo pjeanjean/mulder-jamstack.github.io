@@ -5,13 +5,14 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 mx-auto">
                     <div class="post-preview" *ngFor="let post of blogPosts | sortBy:'desc'">
-                        <a [routerLink]="post.route"
-                            ><h2 class="post-title">{{post?.title}}</h2>
-                            <h3 class="post-subtitle">{{post?.description}}</h3></a
-                        >
+                        <a [routerLink]="post.route">
+                            <h2 class="post-title">{{post?.title}}</h2>
+                            <h3 class="post-subtitle">{{post?.description}}</h3>
+                        </a>
                         <p class="post-meta">{{post?.categories?.join(', ')}}</p>
                     </div>
                 </div>
             </div>
-        </div></ng-container>
-    </mulder-layout>
+        </div>
+    </ng-container>
+</mulder-layout>

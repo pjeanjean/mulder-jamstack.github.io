@@ -1,6 +1,6 @@
 ---
 published: true
-title: Why using DSL ?
+title: Why using DSL for designing your own markup languages?
 slug: whydsl
 backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
 ---

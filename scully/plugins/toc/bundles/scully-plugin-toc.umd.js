@@ -386,7 +386,9 @@
                         toc_1 += '<ul style="margin-bottom: 0px">';
                     }
                     if (previousTag_1 && level && level < previousTag_1) {
-                        toc_1 += '</ul>';
+                        for (let j = 0; j< previousTag_1 - level ; j++ ){
+                            toc_1 += '</ul>';
+                        }
                     }
                     toc_1 += baseLiEl;
                     previousTag_1 = level;
