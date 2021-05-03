@@ -34,9 +34,7 @@ Angular is a TypeScript-based open-source web application framework led by the A
 
 The main building blocks are modules, components, templates, metadata, data binding, directives, services, and dependency injection (see figure below).
 
-<p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Architecture_of_an_Angular_2_application.png/660px-Architecture_of_an_Angular_2_application.png" width="70%" />
-</p>
+<img class="mx-auto d-block rounded-lg"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Architecture_of_an_Angular_2_application.png/660px-Architecture_of_an_Angular_2_application.png" width="70%" />
 
 ## Angular component
 
@@ -51,9 +49,7 @@ Please read the documentation [here](https://angular.io/guide/architecture-compo
 
 We build Web application in composing components. Each component could be instatiated using a custom tag (See figure below).
 
-<p align="center">
-<img src="https://olivier.barais.fr/webinria/resources/angular2/img13.png" width="70%" />
-</p>
+<img class="mx-auto d-block rounded-lg"  src="https://olivier.barais.fr/webinria/resources/angular2/img13.png" width="70%" />
 
 In the case of a simple component, the typescript class is empty because this component doe not have any dynamic behaviour.
 
@@ -91,10 +87,7 @@ This language ensures an improved refactoring, navigation, and auto-completion s
 Angular uses HTML to define the UI of the application. HTML, as compared to JavaScript, is a less convoluted language. HTML is also a declarative and intuitive language.
 How will it help ? You don’t need to invest your time in program flows and deciding what loads first. Define what you require and Angular will do the job.
 
-
-<p align="center">
-<img src="assets/img/angular/angular1.jpeg" width="70%" />
-</p>
+<img class="mx-auto d-block rounded-lg"  src="assets/img/angular/angular1.jpeg" width="70%" />
 
 ## Angular Testing
 
@@ -105,9 +98,7 @@ In Angular, testing is extremely simple. Angular.js modules has the application 
 Angular framework is embedded with original MVC but it’s more of an MVVM software architectural setup. Angular does not ask developers to split an application into different MVC components and build a code that could unite them.
 Its framework uses the MVVM(Model-View-ViewModel) architecture better than an MVC (Model-View-Controller) one. The MVVM model supports two-way data binding between View and ViewModel. This allows the automatic propagation to change within ViewModel’s state to the view. Typically, ViewModel uses the observer model to inform changes to the ViewModel model to model.
 
-<p align="center">
-<img src="assets/img/angular/angular2.jpeg" width="50%" />
-</p>
+<img class="mx-auto d-block rounded-lg" src="assets/img/angular/angular2.jpeg" width="50%" />
 
 Furthermore, it only asks to divide the app and takes care of everything else. Therefore, Angular and MVVM (Model-View-View-Model) design structure are quite similar.
 Angular ensures easy development as it eliminates the need for unnecessary code. It has a simplified MVC architecture, which makes writing getters and setters needless. Directives can be managed by some other teams as these are not part of app code. All in all, developers are promised less coding along with lighter and faster apps. According to Amazon, every 100-millisecond improvement in page loading speed led to 1% increase in revenue.

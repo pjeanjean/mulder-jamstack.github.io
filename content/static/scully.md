@@ -211,7 +211,9 @@ export class BlogComponent implements OnInit {
 
 ```html
 <mulder-layout *ngIf="post">
-    <mulder-main-header [backgroundImage]="post?.backgroundImage || defaultBackground" [heading]="post?.title" [subHeading]="post?.subTitle" [meta]="post?.meta?.join(', ')"></mulder-main-header>
+    <mulder-main-header [backgroundImage]="post?.backgroundImage || defaultBackground" 
+      [heading]="post?.title" [subHeading]="post?.subTitle" [meta]="post?.meta?.join(', ')">
+    </mulder-main-header>
     <article>
         <div class="container">
             <div class="row">
@@ -263,8 +265,9 @@ export class BlogsComponent implements OnInit {
 ```
 
 ```html
-<mulder-layout><mulder-main-header [backgroundImage]="bakgroundImg" [heading]="title"  [siteHeading]="true"></mulder-main-header>
-
+<mulder-layout>
+    <mulder-main-header [backgroundImage]="bakgroundImg" [heading]="title"  [siteHeading]="true">    
+    </mulder-main-header>
     <ng-container *ngIf="blogPosts"
         ><div class="container">
             <div class="row">

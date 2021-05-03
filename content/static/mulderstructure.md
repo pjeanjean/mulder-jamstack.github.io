@@ -58,7 +58,8 @@ The template for the mulder-main-header component is as follows.
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
-                <ng-container *ngIf="siteHeading; else postHeading">                        <div class="site-heading">
+                <ng-container *ngIf="siteHeading; else postHeading">                        
+                    <div class="site-heading">
                         <h1>{{heading}}</h1>
                         <span class="subheading">{{subHeading}}</span>
                         <span class="meta">{{meta}}</span>
@@ -150,9 +151,7 @@ To improve the structuring of the Mulder application, it is structured along 7 m
 - agendaplugin
 - app.module
 
-<p align="center">
-<img src="assets/img/components/mulderstructure.png" width="100%" />
-</p>
+<img class="mx-auto d-block rounded-lg" src="assets/img/components/mulderstructure.png" width="100%" />
 
 ## Understanding specific components and plugin
 

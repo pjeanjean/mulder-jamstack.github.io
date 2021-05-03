@@ -160,5 +160,16 @@ pre {
 h1,
 h2,
 h3 {
-    margin-top: 1 em;
+    margin-top: 1em;
+//    padding-top: 1em
+}
+h1:not(.nounderline):after
+{
+    content:' ';
+    display:block;
+    border:1px solid black;
+}
+
+p {
+    text-align: justify;
 }
