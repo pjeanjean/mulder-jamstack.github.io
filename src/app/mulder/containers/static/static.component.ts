@@ -12,13 +12,12 @@ export class StaticComponent implements OnInit {
     post!: any;
 
     constructor(
-//        private activatedRoute: ActivatedRoute,
+        //        private activatedRoute: ActivatedRoute,
         private scully: ScullyRoutesService
     ) {}
 
     ngOnInit(): void {
         this.scully.getCurrent().subscribe((e) => {
-            console.log(e);
             this.post = e;
         });
         /*
