@@ -6,69 +6,68 @@
         "orderpath" : 1
     },
     {
-        "path": "s/motivations",
+        "path": "/s/motivations",
         "menupath": "Motivations",
         "orderpath" : 2
 
     },
     {
-        "path": "s/webcomponent",
+        "path": "/s/webcomponent",
         "menupath": "component/Undertanding the notion of Web component",
         "orderpath" : 3
     },
     {
-        "path": "s/mulderstructure",
+        "path": "/s/mulderstructure",
         "menupath": "component/Undertanding the mulder page structure"
     },
     {
-        "path": "s/componentabout",
+        "path": "/s/componentabout",
         "menupath": "component/Learning through example: a simple component"
     },
     {
-        "path": "about",
+        "path": "/about",
         "menupath": "component/A simple angular component: About page"
     },
     {
-        "path": "s/componentpublications",
+        "path": "/s/componentpublications",
         "menupath": "component/Learning through example: a more complex component"
     },
     {
-        "path": "publications",
+        "path": "/publications",
         "menupath": "component/A more complex angular component: Publications pages"
     },
     {
-        "path": "s/componentrouting",
+        "path": "/s/componentrouting",
         "menupath": "component/Understanding routing"
     },
     {
-        "path": "foo",
+        "path": "/foo",
         "menupath": "component/Routing to an error page"
     },
     {
-        "path": "s/scully",
+        "path": "/s/scully",
         "menupath": "markup/Understanding Scully and project structure",
         "orderpath" : 4
     },
     {
-        "path": "blog",
+        "path": "/blog",
         "menupath": "markup/Static blog demo"
     },
     {
-        "path": "s/motivations",
+        "path": "/s/motivations",
         "menupath": "markup/Static MD demo"
     },
     {
-        "path": "s/flexibility",
+        "path": "/s/flexibility",
         "menupath": "Flexibility/Configure Static VS Dynamic",
         "orderpath" : 5
     },
     {
-        "path": "s/dynamicmd",
+        "path": "/s/dynamicmd",
         "menupath": "Flexibility/Understanding dynamic md"
     },
-
     {
-        "path": "d/teaching/secuweb",
+        "path": "/d/teaching/secuweb",
         "menupath": "Flexibility/Dynamic MD demo",
         "title": "Demo Hackmd",
         "subTitle": "Demo Hackmd",
@@ -79,20 +78,20 @@
         "toctitle": "Plan"
     },
     {
-        "path": "s/whydsl",
+        "path": "/s/whydsl",
         "menupath": "DSL/Why using DSL",
         "orderpath" : 6
     },
     {
-        "path": "s/dslsurvey",
+        "path": "/s/dslsurvey",
         "menupath": "DSL/DSL1: markup syntax for surveyjs"
     },
     {
-        "path": "s/dslconfagenda",
+        "path": "/s/dslconfagenda",
         "menupath": "DSL/DSL2: a DSL for a conference agenda"
     },
     {
-        "path": "s/dsldesign",
+        "path": "/s/dsldesign",
         "menupath": "DSL/Design your own DSL and embed it in Mulder/Scully"
     }
 ]

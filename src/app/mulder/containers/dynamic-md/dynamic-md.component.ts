@@ -82,12 +82,12 @@ export class DynamicMdComponent
 
         this.activatedRoute.url.subscribe((f) => {
             const selectedPost = this.posts.filter(
-                (p) => p.path === f.join("/")
+                (p) => p.path === "/" + f.join("/")
             );
             if (selectedPost.length > 0) {
                 this.post = selectedPost[0];
             }
-            if (this.post.mdsource != null) {
+            if (this?.post?.mdsource != null) {
                 this.http
                     .get(this.post.mdsource + "/download", this.httpOptions)
                     .subscribe((res) => {
