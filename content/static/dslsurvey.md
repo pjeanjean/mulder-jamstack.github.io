@@ -19,9 +19,10 @@ Another advantage is it has versions for several popular JavaScript Frameworks, 
 
 In the beginning, you could use online [SurveyJS Creator](https://surveyjs.io/create-survey). You can use it on their website for free (only integrating it with your website needs payment).
 
-SurveyJS Creator est un outil *no code* pour batir vos questionnaires. Il est pratique et permet de générer fichier de descipteur json utilisé pour instation le questionnaire et configurer son comportement. Dans les faits, très souvent les utilisateurs écrivent directement le fichier json à la main. La strucure du json devenant de facto un DSL pour la construction de questionnaire. SurveyJS est aussi extensible permettant de définir ses propres widgets facilement. Il offre en outre la possibilité d'écire directement des éléments en html dans le fichier json pour obtenir un look and feel adapté à ces besoins. Il est dès lors naturelle de vouloir bénéficier d'un langage dérivé du markdown pour définir ses propres questionnaires. 
+SurveyJS Creator is a *no code* tool for building your surveys. It is convenient and allows you to generate a json descriptor file used to set up the survey and configure its behaviour. In practice, users often write the json file directly by hand. The json structure becomes a de facto DSL for survey construction. SurveyJS is also extensible allowing to define own widgets easily. It also offers the possibility of directly editing html elements in the json file to obtain a look and feel adapted to these needs. It is therefore natural to want to benefit from a language derived from markdown to define your own surveys.
 
-La syntaxe pourrait ressembler à 
+
+The syntax could look like :
 
 ```md
 # (c) Dans une architecture REST, Si l’on utilise JAXRS, modifiez une données côté serveur sur l’appel d’un GET crée
@@ -69,15 +70,15 @@ Sélectionnez le nom de classe de contrôle de formulaire correct, défini sur t
 
 ```
 
-Les intérets de cette extension de markdown pourrait être les suivants:
+The advantages of this markdown extension could be the following:
 
-- elle reste compatible avec les outils de preview de markdown, 
-- elle permet d'inclure des extraits de code,
-- elle permet de disposer d'un enesemble de directive au sein de markdown pour les différents types de questions. 
+- It remains compatible with markdown preview tools, 
+- It allows for the inclusion of code snippets,
+- it provides a set of guidelines within markdown for the different types of questions. 
 
-Créons maintenant la grammaire associé à ce langage. Nous utiliserons xtext car ce dernier à l'avantage de générer un squelette de serveur LSP qui permet d'inclure facilement ce langage dans eclipse, intelliJ, vscode ou monaco si l'on souhaite proposer un éditeur en ligne pour les futurs utilisateur de ce DSL. 
+Now let's create the grammar associated with this language. We will use xtext because it has the advantage of generating an LSP server skeleton that allows us to easily include this language in eclipse, intelliJ, vscode or monaco if we wish to offer an online editor for future users of this DSL. 
 
-Ci dessous un extrait de cette grammaire à consolider. 
+Below is an extract of this grammar (*to be consolidated*) 
 
 ```grammar
 
@@ -181,9 +182,9 @@ terminal PageSeparator:
 terminal ID: ('a'..'å'|'A'..'Å') ('a'..'å'|'A'..'Å'|'0'..'9'|'!'|'?')*;
 ```
 
-En parallèle, j'ai construit à la main l'AST en TS et le parser combinatoire pour cette synatexe texttuelle. Un générateur en en cours pour que ces deux artefacts soit générés depuis la définition de la grammaire xtext. 
+In parallel, I have built by hand the AST in TS and the combinatorial parser for this textual syntax. A generator is underway so that these two artefacts can be generated from the definition of the xtext grammar. 
 
-ci dessous un extrait de l'AST en TS. 
+Below is an extract of the AST in TypeScript. 
 
 ```ts
 export class Text {
@@ -327,7 +328,7 @@ export function matcher<T>(pattern: Pattern<T>): (sentence: Sentence) => T {
 ```
 
 
-Les opérateurs générique du parseur combinatoire
+The generic operators of the parser combinator are the following. do not hesitate to read the [Combinator parser Wikipedia page](https://en.wikipedia.org/wiki/Parser_combinator).  
 
 ```ts
 // From https://github.com/sigma-engineering/blog-combinators/blob/b80054037f96c4d1b7fa87a243d247f1dc69c1a1/index.ts
@@ -460,7 +461,7 @@ export function map<A, B>(parser: Parser<A>, fn: (val: A) => B): Parser<B> {
 }
 ```
 
-et l'utilisation de ces opérateurs sur notre exemple de dsl de quizz pour définir notre parser combinatoire en TS. 
+The use of these operators on our quizz dsl example to define our combinatorial parser in Typerscript is the following. 
 
 ```ts
 import * as parser from "./genericcombinatorialparser";
@@ -683,11 +684,9 @@ export const quizzdsl = parser.many(quizzdslq);
 ```
 
 
+It is really important to keep in mind that part 1 and 3 can be generated from the xtext description, part 2 is generic. 
 
-
-Il est vraiment important d'avoir en tête que l'extrait 1 et 3 peuvent être généré à partir de la description xtext, la partie 2 est générique. 
-
-Il reste à visiter le modèle ainsi construit par le parseur pour générer le fichier json attendu par surveyjs. C'est le rôle de la classe **SuerveyJSPrinter**. C'est vraiment un simple visiteur concret sur l'AST (un pretty printer pure souche)
+It remains to visit the model thus built by the parser to generate the json file expected by surveyjs. This is the role of the **SuerveyJSPrinter** class. It is just a concrete visitor to the AST (a pure pretty printer).
 
 ```ts
 import { Result, Success } from "./genericcombinatorialparser";
@@ -1331,11 +1330,13 @@ placeHolder : `;
 ```
 
 
-## Step 4, utilisation au sein de mulder
+## Step 4, Let's use it within mulder
 
-Au sein de mulder, nous avons ensuité créer un simple composant angular capable de consommer une ressource distante ou local de ce DSL, parser le contenu, transformer le contenu en json, appliquer une transformation md2html si certains item étaient eux même écrit en md afficher dynamiquement le contenu. Ce composant est configurable à l'instatiation afin de puvoir l'utiliser lors d'examen (temps donné), pour utiliser une url de backend particulière pour sauver une réponse d'un candidat, pour conserver des sauvegardes de réponses à chaque teransition de page ...
+Within *mulder*, we then created a simple angular component able to consume a remote or local resource of this Domain-Specific Markdown language, parse the content, transform the content into json, apply a md2html transformation if some items were themselves written in md, display the content dynamically. This component is configurable at instatiation in order to be able to use it during exams (given time), to use a particular backend url to 
+- save an answer from a candidate, 
+- save answers saves after each page transition...
 
-Un exemple d'utilisation de ce composant est visible ci-dessous.  
+An example of the use of this component can be seen below.  
 
 
 ```html
@@ -1349,3 +1350,110 @@ Un exemple d'utilisation de ce composant est visible ci-dessous.
 </mulder-layout>
 ```
 
+```ts
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+import {
+    ChangeDetectionStrategy,
+    Component,
+    OnDestroy,
+    OnInit,
+} from "@angular/core";
+import { SuerveyJSPrinter } from "@app/surveyplugin/quizzdsl/prettyprinter";
+
+@Component({
+    selector: "mulder-surveydemo",
+    templateUrl: "./surveydemo.component.html",
+    styleUrls: ["surveydemo.component.scss"],
+})
+export class SurveyDemoComponent implements OnInit, OnDestroy {
+    json: any = {};
+    private titre!: string;
+    private consigne!: string;
+    private tmpsenseconde: number;
+    private questionsOrder?: string;
+    private choicesOrder?: string;
+    private pageOrder?: string;
+    private completedhtml?: string;
+
+    private httpOptions = {
+        headers: new HttpHeaders({
+            Accept: "text/html, application/xhtml+xml, */*",
+        }),
+        responseType: "text" as "json",
+    };
+
+    constructor(private http: HttpClient) {
+        this.titre = "Exam 2020";
+        this.consigne = "Demo of what you have to do";
+        this.tmpsenseconde = 3600;
+        this.questionsOrder = "random";
+        this.choicesOrder = "random";
+        this.pageOrder = "random";
+        this.completedhtml =
+            "<p><h4>Thanks for completing this form</h4></p>";
+
+
+    }
+
+    // canbesaved = true;
+
+    shuffleArray(array: Array<any>) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+    ngOnInit(): void {
+        const p = new SuerveyJSPrinter(
+            this.titre,
+            this.consigne,
+            3600,
+            this.questionsOrder,
+            this.choicesOrder,
+            this.completedhtml
+        );
+        this.http
+            .get(
+                "https://raw.githubusercontent.com/mulder-jamstack/mulder-jamstack.github.io/src/content/survey/demo.md",
+                this.httpOptions
+            )
+            .subscribe((res) => {
+                console.log(res);
+                const s1 = p.print(res as string);
+
+                const s = JSON.parse(eval(s1));
+
+                // Random pages
+                if (this.pageOrder === "random") {
+                    const init = s.pages.shift();
+                    this.shuffleArray(s.pages);
+                    s.pages = [init, ...s.pages];
+                }
+                this.json = s;
+                console.log(this.json);
+            });
+    }
+
+    sendData(result: any) {
+        console.log(result);
+        /*const formData = new FormData();
+        const dataStr = new Blob([JSON.stringify(result)], {
+            type: "application/json",
+        });
+        // var dataStr = "data:application/json;charset=utf-8," + encodeURIComponent(JSON.stringify(result));
+
+        formData.append("upload[]", dataStr, "result.json");
+
+        this.http.post("/upload", formData).subscribe(
+            (res: any) => {},
+            (err: any) => {}
+        );*/
+    }
+
+    sendFinalData(result: any) {
+        console.log(result);
+    }
+
+    ngOnDestroy() {}
+}
+```
