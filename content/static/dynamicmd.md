@@ -5,6 +5,8 @@ slug: dynamicmd
 backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
 ---
 
+<div style=" border:1px dotted black;" id="toc"></div>
+
 # Dynamic MD Requirement
 
 The first idea behind Mulder is to allow the developer to choose late whether a markup should be rendered at CI time (compilation) or when the page is loaded (interpretation), and to update this choice smoothly. The goal is for the *DynamicMarkdown* component to be the counterpart of the scully Blog module by allowing a markdown document to be uploaded as a WEB resource on the fly.
