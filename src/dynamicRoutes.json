@@ -93,6 +93,10 @@
         "menupath": "DSL/DSL1: markup syntax for surveyjs"
     },
     {
+        "path": "/surveydemo",
+        "menupath": "DSL/DSL1 demo"
+    },
+    {
         "path": "/s/dslconfagenda",
         "menupath": "DSL/DSL2: a DSL for a conference agenda"
     },
