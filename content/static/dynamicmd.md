@@ -5,8 +5,6 @@ slug: dynamicmd
 backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
 ---
 
-<img class="mx-auto d-block rounded-lg" src="https://image.freepik.com/vecteurs-libre/bientot-construction-conception-fond-jaune_1017-25509.jpg" width="70%" />
-
 # Dynamic MD Requirement
 
 The first idea behind Mulder is to allow the developer to choose late whether a markup should be rendered at CI time (compilation) or when the page is loaded (interpretation), and to update this choice smoothly. The goal is for the *DynamicMarkdown* component to be the counterpart of the scully Blog module by allowing a markdown document to be uploaded as a WEB resource on the fly.
@@ -285,4 +283,4 @@ I have developed a router plugin to tell Scully the routes defined in the *dynam
 
 The code of the plugin is as [here](https://github.com/mulder-jamstack/mulder-jamstack.github.io/blob/91be3b920666cad8f61197d5f1d18c6c96d577d4/scully.mulder.config.ts#L17) .
 
-Thus, by simply editing the *dynamicRoutes.json* file, the developer can decide whether the markdown file is rendered statically (during the CI) or dynamically (when the page is loaded). 
+Thus, by simply editing the *dynamicRoutes.json* file, the developer can decide whether the markdown file is rendered statically (during the CI) or dynamically (when the page is loaded).
