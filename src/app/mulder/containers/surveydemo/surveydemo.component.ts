@@ -36,10 +36,7 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
         this.questionsOrder = "random";
         this.choicesOrder = "random";
         this.pageOrder = "random";
-        this.completedhtml =
-            "<p><h4>Thanks for completing this form</h4></p>";
-
-
+        this.completedhtml = "<p><h4>Thanks for completing this form</h4></p>";
     }
 
     // canbesaved = true;
@@ -54,7 +51,7 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
         const p = new SuerveyJSPrinter(
             this.titre,
             this.consigne,
-            3600,
+            this.tmpsenseconde,
             this.questionsOrder,
             this.choicesOrder,
             this.completedhtml
@@ -65,7 +62,6 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
                 this.httpOptions
             )
             .subscribe((res) => {
-                console.log(res);
                 const s1 = p.print(res as string);
 
                 const s = JSON.parse(eval(s1));
@@ -77,28 +73,31 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
                     s.pages = [init, ...s.pages];
                 }
                 this.json = s;
-                console.log(this.json);
             });
     }
 
     sendData(result: any) {
         console.log(result);
-        /*const formData = new FormData();
-        const dataStr = new Blob([JSON.stringify(result)], {
-            type: "application/json",
-        });
-        // var dataStr = "data:application/json;charset=utf-8," + encodeURIComponent(JSON.stringify(result));
-
-        formData.append("upload[]", dataStr, "result.json");
-
-        this.http.post("/upload", formData).subscribe(
-            (res: any) => {},
-            (err: any) => {}
-        );*/
     }
 
     sendFinalData(result: any) {
-        console.log(result);
+        const options = {
+            headers: new HttpHeaders().set("Content-Type", "text/plain"),
+        };
+        this.http
+            .post(
+                "https://script.google.com/macros/s/AKfycbyiSJmQJqg1tevvnuQEKR_kcQW4vekO88Z1z9fCN-1SLWIuogJr_ZXZ1w5m609ptXFPyQ/exec",
+                result,
+                options
+            )
+            .subscribe(
+                (res: any) => {
+                    console.log(res);
+                },
+                (err: any) => {
+                    console.log(err);
+                }
+            );
     }
 
     ngOnDestroy() {}

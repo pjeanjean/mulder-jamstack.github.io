@@ -106,7 +106,6 @@ export class SurveyComponent implements OnInit, OnChanges {
         return this._json;
     }
     set json(json: any) {
-        console.log("set");
         this._json = json;
     }
 
@@ -114,7 +113,6 @@ export class SurveyComponent implements OnInit, OnChanges {
     result: any;
     constructor(private http: HttpClient) {}
     ngOnChanges(changes: SimpleChanges): void {
-        console.log(this.json);
         this.initFromJSON();
     }
 
@@ -131,7 +129,6 @@ export class SurveyComponent implements OnInit, OnChanges {
             let str = marked(options.text) as string;
             // remove root paragraphs <p></p>
             options.str = str;
-            console.log(options);
             if (!str.startsWith("<p>")) {
             } else {
                 str = str.substring(3);
