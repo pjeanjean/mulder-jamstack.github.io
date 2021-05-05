@@ -3,10 +3,13 @@
         <a class="navbar-brand" routerLink="/">Mulder</a><button class="navbar-toggler navbar-toggler-right" type="button" (click)="isMenuCollapsed = !isMenuCollapsed" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><fa-icon class="ml-1" [icon]='["fas", "bars"]'></fa-icon></button>
         <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed">
             <ul class="navbar-nav ml-auto">
-                <li *ngFor="let menu of mainStaticMenu" class="nav-item"><a class="nav-link" routerLink="{{'/'+ menu.path}}" >{{menu?.menupath}}</a></li>
+                <li *ngFor="let menu of mainStaticMenu" class="nav-item"><a class="nav-link" routerLink="{{'/'+ menu.path}}" >
+                    <fa-icon  *ngIf="hasicon(menu?.menupath)" [size]="'xs'" transform="shrink-2 up-8" [icon]="icon(menu?.menupath)"></fa-icon>
+                    {{menu?.menupath}}</a></li>
                 <li *ngFor="let mainMenuEntry of mainMenuEntries" class="nav-item dropdown" ngbDropdown>
                     <a class="nav-link"  style="cursor: pointer;" [id]="mainMenuEntry" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
-                      {{mainMenuEntry}}
+                            <fa-icon  *ngIf="hasicon(mainMenuEntry)" [size]="'xs'" transform="shrink-2 up-8" [icon]="icon(mainMenuEntry)"></fa-icon>
+                        {{mainMenuEntry}}
                     </a>
                     <div  ngbDropdownMenu class="dropdown-menu"  (click)="isMenuCollapsed = !isMenuCollapsed" [attr.aria-labelledby]="mainMenuEntry">
                       <a *ngFor="let doc of mainMenuMap.get(mainMenuEntry)" class="dropdown-item" href="#" routerLink="{{'/'+ doc.path}}" >{{doc?.menupath.split('/')[1]}}</a>

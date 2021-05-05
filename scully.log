@@ -3740,3 +3740,12 @@ Using stored unhandled routes!.
 ----------------------------------[object Object]
 
 Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------[object Object]
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead

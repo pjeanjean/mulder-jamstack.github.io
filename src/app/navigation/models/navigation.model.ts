@@ -15,4 +15,5 @@ export interface DynamicRoute {
     tocselector?: string[];
     toctitle?: string;
     orderpath?: number;
+    level1icon?: string[];
 }

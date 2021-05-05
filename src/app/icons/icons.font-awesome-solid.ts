@@ -21,6 +21,8 @@ import {
     faTable,
     faTachometerAlt,
     faUser,
+    faHome,
+    faRadiationAlt
 } from "@fortawesome/free-solid-svg-icons";
 
 export const fontAwesomeSolidIcons = {
@@ -44,4 +46,6 @@ export const fontAwesomeSolidIcons = {
     faCheckDouble,
     faInfinity,
     faSlidersH,
+    faHome,
+    faRadiationAlt,
 };

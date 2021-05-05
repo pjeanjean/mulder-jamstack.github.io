@@ -2,7 +2,7 @@
 published: true
 title: Understanding dynamic md
 slug: dynamicmd
-backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
+backgroundImage: 'url(assets/img/mdbackground.jpg)'
 ---
 
 <div style=" border:1px dotted black;" id="toc"></div>

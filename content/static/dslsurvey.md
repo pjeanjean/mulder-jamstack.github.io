@@ -1335,6 +1335,8 @@ placeHolder : `;
 
 Au sein de mulder, nous avons ensuité créer un simple composant angular capable de consommer une ressource distante ou local de ce DSL, parser le contenu, transformer le contenu en json, appliquer une transformation md2html si certains item étaient eux même écrit en md afficher dynamiquement le contenu. Ce composant est configurable à l'instatiation afin de puvoir l'utiliser lors d'examen (temps donné), pour utiliser une url de backend particulière pour sauver une réponse d'un candidat, pour conserver des sauvegardes de réponses à chaque teransition de page ...
 
+Un exemple d'utilisation de ce composant est visible ci-dessous.  
+
 
 ```html
 <mulder-layout>
@@ -1346,3 +1348,4 @@ Au sein de mulder, nous avons ensuité créer un simple composant angular capabl
     </div>
 </mulder-layout>
 ```
+

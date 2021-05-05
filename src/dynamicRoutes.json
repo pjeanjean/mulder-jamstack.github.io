@@ -2,73 +2,78 @@
 
     {
         "path": "",
-        "menupath": "🏠 home",
+        "menupath": "home",
+        "level1icon": ["fas", "home"],
         "orderpath" : 1
     },
     {
         "path": "/s/motivations",
-        "menupath": "💡 Motivations",
+        "menupath": "Motivations",
+        "level1icon": ["fas", "radiation-alt"],
         "orderpath" : 2
 
     },
     {
         "path": "/s/webcomponent",
-        "menupath": "🧱 component/Undertanding the notion of Web component",
+        "level1icon": ["fas", "project-diagram"],
+        "menupath": "component/Undertanding the notion of Web component",
         "orderpath" : 3
     },
     {
         "path": "/s/mulderstructure",
-        "menupath": "🧱 component/Undertanding the mulder page structure"
+        "menupath": "component/Undertanding the mulder page structure"
     },
     {
         "path": "/s/componentabout",
-        "menupath": "🧱 component/Learning through example: a simple component"
+        "menupath": "component/Learning through example: a simple component"
     },
     {
         "path": "/about",
-        "menupath": "🧱 component/A simple angular component: About page"
+        "menupath": "component/A simple angular component: About page"
     },
     {
         "path": "/s/componentpublications",
-        "menupath": "🧱 component/Learning through example: a more complex component"
+        "menupath": "component/Learning through example: a more complex component"
     },
     {
         "path": "/publications",
-        "menupath": "🧱 component/A more complex angular component: Publications pages"
+        "menupath": "component/A more complex angular component: Publications pages"
     },
     {
         "path": "/s/componentrouting",
-        "menupath": "🧱 component/Understanding routing"
+        "menupath": "component/Understanding routing"
     },
     {
         "path": "/foo",
-        "menupath": "🧱 component/Routing to an error page"
+        "menupath": "component/Routing to an error page"
     },
     {
         "path": "/s/scully",
-        "menupath": "🧾 markup/Understanding Scully and project structure",
+        "menupath": "markup/Understanding Scully and project structure",
+        "level1icon": ["fas", "infinity"],
         "orderpath" : 4
     },
     {
         "path": "/blog",
-        "menupath": "🧾 markup/Static blog demo"
+        "menupath": "markup/Static blog demo"
     },
     {
         "path": "/s/motivations",
-        "menupath": "🧾 markup/Static MD demo"
+        "menupath": "markup/Static MD demo"
     },
     {
         "path": "/s/flexibility",
-        "menupath": "✅ Flexibility/Configure Static VS Dynamic",
+        "menupath": "Flexibility/Configure Static VS Dynamic",
+        "level1icon": ["fas", "sliders-h"],
         "orderpath" : 5
     },
     {
         "path": "/s/dynamicmd",
-        "menupath": "✅ Flexibility/Understanding dynamic md"
+        "menupath": "Flexibility/Understanding dynamic md"
     },
     {
         "path": "/d/teaching/secuweb",
-        "menupath": "✅ Flexibility/Dynamic MD demo",
+        "menupath": "Flexibility/Dynamic MD demo",
         "title": "Demo Hackmd",
         "subTitle": "Demo Hackmd",
         "meta": ["demo", "dynamic", "md"],
@@ -79,19 +84,20 @@
     },
     {
         "path": "/s/whydsl",
-        "menupath": "👌 DSL/Why using DSL",
+        "menupath": "DSL/Why using DSL",
+        "level1icon": ["fas", "check-double"],
         "orderpath" : 6
     },
     {
         "path": "/s/dslsurvey",
-        "menupath": "👌 DSL/DSL1: markup syntax for surveyjs"
+        "menupath": "DSL/DSL1: markup syntax for surveyjs"
     },
     {
         "path": "/s/dslconfagenda",
-        "menupath": "👌 DSL/DSL2: a DSL for a conference agenda"
+        "menupath": "DSL/DSL2: a DSL for a conference agenda"
     },
     {
         "path": "/s/dsldesign",
-        "menupath": "👌 DSL/Design your own DSL and embed it in Mulder/Scully"
+        "menupath": "DSL/Design your own DSL and embed it in Mulder/Scully"
     }
 ]
