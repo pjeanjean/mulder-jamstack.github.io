@@ -2,7 +2,7 @@
 published: true
 title: Configure Static Rendering VS Dynamic Rendering
 slug: flexibility
-backgroundImage: 'url(assets/img/bay2-2-optimized.jpg)'
+backgroundImage: 'url(assets/img/background4.png)'
 ---
 
 > "Markup" is for markup language such as Markdown, but maybe also all other language, ascidoc, etc. . With jamstack we have the constraint, and advantage, that it is static rendered, as opposite to other CMS like wordpress.

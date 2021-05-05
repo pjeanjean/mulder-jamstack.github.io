@@ -1,5 +1,14 @@
 import { HttpClient } from "@angular/common/http";
-import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
+import {
+    ChangeDetectionStrategy,
+    Component,
+    EventEmitter,
+    Input,
+    OnChanges,
+    OnInit,
+    Output,
+    SimpleChanges,
+} from "@angular/core";
 import marked from "marked";
 import prism from "prismjs";
 import "prismjs/components/prism-bash";
@@ -86,14 +95,28 @@ Survey.StylesManager.applyTheme("default");
     template: `<div class="survey-container contentcontainer codecontainer">
         <div id="surveyElement"></div>
     </div>`,
+    changeDetection: ChangeDetectionStrategy.Default,
 })
-export class SurveyComponent implements OnInit {
+export class SurveyComponent implements OnInit, OnChanges {
     @Output() submitSurvey = new EventEmitter<any>();
     @Output() submitFinalSurvey = new EventEmitter<any>();
     @Input()
-    json: object | undefined;
+    @Input()
+    get json(): any {
+        return this._json;
+    }
+    set json(json: any) {
+        console.log("set");
+        this._json = json;
+    }
+
+    _json!: object;
     result: any;
     constructor(private http: HttpClient) {}
+    ngOnChanges(changes: SimpleChanges): void {
+        console.log(this.json);
+        this.initFromJSON();
+    }
 
     ngOnInit() {
         this.initFromJSON();
@@ -107,14 +130,20 @@ export class SurveyComponent implements OnInit {
 
             let str = marked(options.text) as string;
             // remove root paragraphs <p></p>
+            options.str = str;
+            console.log(options);
             if (!str.startsWith("<p>")) {
             } else {
                 str = str.substring(3);
                 if (str.substring(str.length - 4, str.length) === "</p>") {
                     str = str.substring(0, str.length - 4);
+                } else if (
+                    str.substring(str.length - 5, str.length - 1) === "</p>"
+                ) {
+                    str = str.substring(0, str.length - 5);
                 }
             }
-            // set html
+            // set html*/
             options.html = str;
         });
 
