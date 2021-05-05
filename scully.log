@@ -3187,3 +3187,483 @@ Using stored unhandled routes!.
 
 
 Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------No configuration for route "/teaching/:slug" found. SkippingNo configuration for route "/d/:cat/:slug" found. Skipping
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------No configuration for route "/teaching/:slug" found. SkippingNo configuration for route "/d/:cat/:slug" found. Skipping
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------No configuration for route "/teaching/:slug" found. SkippingNo configuration for route "/d/:cat/:slug" found. Skipping
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------No configuration for route "/teaching/:slug" found. SkippingNo configuration for route "/d/:cat/:slug" found. Skipping
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+No configuration for route "/d/:cat/:slug" found. Skipping
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+No configuration for route "/d/:cat/:slug" found. Skipping
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------No configuration for route "/d/:cat/:slug" found. Skipping
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+No configuration for route "/d/:slug" found. Skipping
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+No configuration for route "/d/:slug" found. Skipping
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+No configuration for route "/d/:slug" found. Skipping
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+foo
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug
+Using deprecated plugin type:"render"  use "postProcessByHtml" insteadUsing deprecated plugin type:"render"  use "postProcessByHtml" insteadUsing deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug(...data) => {
+        const injectData = data.reduce((r, val, pos) => {
+            r[params[pos].position] = val;
+            return r;
+        }, []);
+        return parts.reduce((url, part, pos) => `${url}${injectData[pos] !== undefined ? injectData[pos] : part.part}${pos !== parts.length - 1 ? '/' : ''}`, '');
+    }
+
+Received Kill commandClosed servers
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug4(...data) => {
+        const injectData = data.reduce((r, val, pos) => {
+            r[params[pos].position] = val;
+            return r;
+        }, []);
+        return parts.reduce((url, part, pos) => `${url}${injectData[pos] !== undefined ? injectData[pos] : part.part}${pos !== parts.length - 1 ? '/' : ''}`, '');
+    }
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug/d/:cat/:slug
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug/d/:cat/:slug
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug/d/:cat/:slug/d/:cat/:slugs/motivations/d/:cat/:slugs/webcomponent/d/:cat/:slugs/mulderstructure/d/:cat/:slugs/componentabout/d/:cat/:slugabout/d/:cat/:slugs/componentpublications/d/:cat/:slugpublications/d/:cat/:slugs/componentrouting/d/:cat/:slugfoo/d/:cat/:slugs/scully/d/:cat/:slugblog/d/:cat/:slugs/motivations/d/:cat/:slugs/flexibility/d/:cat/:slugs/dynamicmd/d/:cat/:slugd/teaching/secuweb/d/:cat/:slugs/whydsl/d/:cat/:slugs/dslsurvey/d/:cat/:slugs/dslconfagenda/d/:cat/:slugs/dsldesign[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug/d/:cat/:slug/d/:cat/:slugs/motivations/d/:cat/:slug/d/:cat/:slugs/webcomponents/mulderstructure/d/:cat/:slugs/componentabout/d/:cat/:slugabout/d/:cat/:slugs/componentpublications/d/:cat/:slugpublications/d/:cat/:slugs/componentrouting/d/:cat/:slugfoo/d/:cat/:slug/d/:cat/:slugs/scullyblog/d/:cat/:slugs/motivations/d/:cat/:slugs/flexibility/d/:cat/:slugs/dynamicmd/d/secuweb/:slugd/teaching/secuweb/d/:cat/:slugs/whydsl/d/:cat/:slugs/dslsurvey/d/:cat/:slugs/dslconfagenda/d/:cat/:slugs/dsldesign[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug/d/:cat/:slugs/motivations/d/:cat/:slugs/webcomponent/d/:cat/:slugs/mulderstructure/d/:cat/:slugs/componentabout/d/:cat/:slugabout/d/:cat/:slugs/componentpublications/d/:cat/:slugpublications/d/:cat/:slugs/componentrouting/d/:cat/:slugfoo/d/:cat/:slugs/scully/d/:cat/:slugblog/d/:cat/:slugs/motivations/d/:cat/:slugs/flexibility/d/:cat/:slugs/dynamicmd/d/secuweb/:slugd/teaching/secuweb/d/:cat/:slugs/whydsl/d/:cat/:slugs/dslsurvey/d/:cat/:slugs/dslconfagenda/d/:cat/:slugs/dsldesign[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+/d/:cat/:slug/d/:cat/:slugs/motivations/d/:cat/:slugs/webcomponent/d/:cat/:slugs/mulderstructure/d/:cat/:slugs/componentabout/d/:cat/:slugabout/d/:cat/:slugs/componentpublications/d/:cat/:slugpublications/d/:cat/:slugs/componentrouting/d/:cat/:slugfoo/d/:cat/:slugs/scully/d/:cat/:slugblog/d/:cat/:slugs/motivations/d/:cat/:slugs/flexibility/d/:cat/:slugs/dynamicmd/d/secuweb/:slugd/teaching/secuweb/d/:cat/:slugs/whydsl/d/:cat/:slugs/dslsurvey/d/:cat/:slugs/dslconfagenda/d/:cat/:slugs/dsldesign[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" insteadUsing deprecated plugin type:"render"  use "postProcessByHtml" instead
+foo/d/:cat/:slugfoo1foo/d/:cat/:slugfoo1s/motivationsfoo/d/:cat/:slugfoo1s/webcomponentfoo/d/:cat/:slugfoo1s/mulderstructurefoo/d/:cat/:slugfoo1s/componentaboutfoo/d/:cat/:slugfoo1aboutfoo/d/:cat/:slugfoo1s/componentpublicationsfoo/d/:cat/:slugfoo1publicationsfoo/d/:cat/:slugfoo1s/componentroutingfoo/d/:cat/:slugfoo1foofoo/d/:cat/:slugfoo1s/scullyfoo/d/:cat/:slugfoo1blogfoo/d/:cat/:slugfoo1s/motivationsfoo/d/:cat/:slugfoo1s/flexibilityfoo/d/:cat/:slugfoo1s/dynamicmdfoo/d/secuweb/:slugfoo1d/teaching/secuwebfoo/d/:cat/:slugfoo1s/whydslfoo/d/:cat/:slugfoo1s/dslsurveyfoo/d/:cat/:slugfoo1s/dslconfagendafoo/d/:cat/:slugfoo1s/dsldesign[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+foo/d/:cat/:slugfoo1foo/d/motivations/:slugfoo1s/motivationsfoo/d/webcomponent/:slugfoo1s/webcomponentfoo/d/mulderstructure/:slugfoo1s/mulderstructurefoo/d/componentabout/:slugfoo1s/componentaboutfoo/d/:cat/:slugfoo1aboutfoo/d/componentpublications/:slugfoo1s/componentpublicationsfoo/d/:cat/:slugfoo1publicationsfoo/d/componentrouting/:slugfoo1s/componentroutingfoo/d/:cat/:slugfoo1foofoo/d/scully/:slugfoo1s/scullyfoo/d/:cat/:slugfoo1blogfoo/d/motivations/:slugfoo1s/motivationsfoo/d/flexibility/:slugfoo1s/flexibilityfoo/d/dynamicmd/:slugfoo1s/dynamicmdfoo/d/teaching/secuwebfoo1d/teaching/secuwebfoo/d/whydsl/:slugfoo1s/whydslfoo/d/dslsurvey/:slugfoo1s/dslsurveyfoo/d/dslconfagenda/:slugfoo1s/dslconfagendafoo/d/dsldesign/:slugfoo1s/dsldesign[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+foo/d/:cat/:slugfoo1foo/d/s/motivationsfoo/d/s/webcomponentfoo1/s/motivationsfoo1/s/webcomponentfoo/d/s/mulderstructurefoo1/s/mulderstructurefoo/d/s/componentaboutfoo1/s/componentaboutfoo/d/about/:slugfoo1/aboutfoo/d/s/componentpublicationsfoo1/s/componentpublicationsfoo/d/publications/:slugfoo1/publicationsfoo/d/s/componentroutingfoo1/s/componentroutingfoo/d/foo/:slugfoo1/foofoo/d/s/scullyfoo1/s/scullyfoo/d/blog/:slugfoo1/blogfoo/d/s/motivationsfoo1/s/motivationsfoo/d/s/flexibilityfoo1/s/flexibilityfoo/d/s/dynamicmdfoo1/s/dynamicmd The router plugin "dynamicMD has thrown the below error,
+              while trying to render route "unknown"
+              Scully will exitTypeError: Cannot read property 'position' of undefined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+foo/d/:cat/:slugfoo1foo/d/motivations/:slugfoo1/s/motivationsfoo/d/webcomponent/:slugfoo1/s/webcomponentfoo/d/mulderstructure/:slugfoo1/s/mulderstructurefoo/d/componentabout/:slugfoo1/s/componentaboutfoo/d/:cat/:slugfoo1/aboutfoo/d/componentpublications/:slugfoo1/s/componentpublicationsfoo/d/:cat/:slugfoo1/publicationsfoo/d/componentrouting/:slugfoo1/s/componentroutingfoo/d/:cat/:slugfoo1/foofoo/d/scully/:slugfoo1/s/scullyfoo/d/:cat/:slugfoo1/blogfoo/d/motivations/:slugfoo1/s/motivationsfoo/d/flexibility/:slugfoo1/s/flexibilityfoo/d/dynamicmd/:slugfoo1/s/dynamicmdfoo/d/teaching/secuwebfoo1/d/teaching/secuwebfoo/d/whydsl/:slugfoo1/s/whydslfoo/d/dslsurvey/:slugfoo1/s/dslsurveyfoo/d/dslconfagenda/:slugfoo1/s/dslconfagendafoo/d/dsldesign/:slugfoo1/s/dsldesign[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+[object Object]
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------[object Object]
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------[object Object]
+
+Using deprecated plugin type:"render"  use "postProcessByHtml" instead
