@@ -1,3 +1,15 @@
+---
+titre: 'Examen 2021'
+showphotocapture: true
+consigne: 'Demo of what you have to do'
+tmpsenseconde: 3600
+questionsOrder: 'none'
+choicesOrder: 'none'
+pageOrder: 'none'
+completedhtml: '<p><h4>Thanks for completing this form</h4></p>'
+startSurveyText: 'Start the exam'
+locale: 'en'
+---
 # (c) Dans une architecture REST, Si l’on utilise JAXRS, modifiez une données côté serveur sur l’appel d’un GET crée
 
 - [ ] une erreur de compilation
