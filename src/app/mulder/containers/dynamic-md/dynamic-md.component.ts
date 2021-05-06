@@ -12,6 +12,7 @@ import {
 import { DomSanitizer } from "@angular/platform-browser";
 import { ActivatedRoute, Router } from "@angular/router";
 import { DynamicRoute } from "@app/navigation/models";
+import yaml from "js-yaml";
 import marked from "marked";
 import prism from "prismjs";
 import "prismjs/components/prism-bash";
@@ -56,6 +57,11 @@ export class DynamicMdComponent
     @ViewChild("content")
     content!: ElementRef;
     posts!: DynamicRoute[];
+    title!: string;
+    subTitle!: string;
+    meta!: string[];
+    siteHeading = true;
+    backgroundImage!: string;
 
     post!: any;
     defaultBackground = 'url("assets/img/home-bg.jpg")';
@@ -90,8 +96,38 @@ export class DynamicMdComponent
             if (this?.post?.mdsource != null) {
                 this.http
                     .get(this.post.mdsource + "/download", this.httpOptions)
-                    .subscribe((res) => {
-                        // console.log(marked(res as string));
+                    .subscribe((r) => {
+                        let res = r as string;
+                        let res1 = "";
+                        if (res.startsWith("---")) {
+                            const lines = res.split("\n");
+                            lines.shift();
+                            for (const line of lines) {
+                                if (line.startsWith("---")) {
+                                    break;
+                                }
+                                res1 = res1 + line + "\n";
+                            }
+                            res = res.replace("---\n" + res1 + "---\n", "");
+                            const metadata = yaml.load(res1);
+                            this.title = (metadata as any)?.title;
+                            this.subTitle = (metadata as any)?.subTitle;
+                            this.meta = (metadata as any)?.meta;
+                            if ((metadata as any)?.siteHeading !== undefined) {
+                                this.siteHeading = (metadata as any)?.siteHeading;
+                            }
+
+                            this.backgroundImage = (metadata as any)?.backgroundImage;
+                        } else {
+                            this.title = this?.post?.title;
+                            this.subTitle = this?.post?.subTitle;
+                            this.meta = this?.post?.meta;
+                            if (this?.post?.siteHeading !== undefined) {
+                                this.siteHeading = this?.post?.siteHeading;
+                            }
+                            this.backgroundImage = this?.post?.backgroundImage;
+                        }
+
                         const parser = new DOMParser();
                         const doc = parser.parseFromString(
                             marked(res as string),

@@ -1,6 +1,9 @@
 
 <mulder-layout *ngIf="post">
-    <mulder-main-header [backgroundImage]="post?.backgroundImage || defaultBackground" [heading]="post?.title" [subHeading]="post?.subTitle" [meta]="post?.meta?.join(', ')" [siteHeading]="true"></mulder-main-header>
+    <mulder-main-header [backgroundImage]="backgroundImage || defaultBackground"
+      [heading]="title" [subHeading]="subTitle" [meta]="meta?.join(', ')"
+      [siteHeading]="siteHeading">
+    </mulder-main-header>
     <article>
         <div class="container">
             <div class="row">
@@ -9,6 +12,5 @@
                 </div>
             </div>
         </div>
-    </article></mulder-layout>
-
-
+    </article>
+</mulder-layout>
