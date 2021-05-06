@@ -2,6 +2,7 @@
     <mulder-main-header backgroundImage='url("assets/img/backgroundsurvey.png")' heading="DemoSurveyJS"
         subHeading="Show the use of a DSL to configure a survey" [siteHeading]="true">
     </mulder-main-header>
-    <div class="container">    <survey *ngIf="json !== null"  [json]="json" (submitSurvey)="sendData($event)" (submitFinalSurvey)="sendFinalData($event)"></survey>
+    <div class="container">
+        <survey *ngIf="json !== null"  [json]="json" (submitSurvey)="sendData($event)" (submitFinalSurvey)="sendFinalData($event)"></survey>
     </div>
 </mulder-layout>

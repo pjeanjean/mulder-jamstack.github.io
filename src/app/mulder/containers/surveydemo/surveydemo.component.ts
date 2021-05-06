@@ -33,9 +33,9 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
         this.titre = "Examen 2020";
         this.consigne = "Demo of what you have to do";
         this.tmpsenseconde = 3600;
-        this.questionsOrder = "random";
-        this.choicesOrder = "random";
-        this.pageOrder = "random";
+        this.questionsOrder = "none"; // "random";
+        this.choicesOrder = "none";
+        this.pageOrder = "none";
         this.completedhtml = "<p><h4>Thanks for completing this form</h4></p>";
     }
 
