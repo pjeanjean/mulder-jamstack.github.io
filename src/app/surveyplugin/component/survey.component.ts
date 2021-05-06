@@ -41,14 +41,14 @@ marked.setOptions({
         }
     },
     pedantic: false,
-    gfm: true,
+    gfm: false,
     headerIds: true,
     breaks: false,
     mangle: true,
     sanitize: false,
-    smartLists: true,
-    smartypants: true,
-    xhtml: true,
+    smartLists: false,
+    smartypants: false,
+    xhtml: false,
 });
 
 widgets.icheck(Survey);
@@ -87,7 +87,7 @@ uml.default(Survey, (window as any).$);
 Survey.JsonObject.metaData.addProperty("questionbase", "popupdescription:text");
 Survey.JsonObject.metaData.addProperty("page", "popupdescription:text");
 
-Survey.StylesManager.applyTheme("default");
+Survey.StylesManager.applyTheme("bootstrapmaterial");
 
 @Component({
     // tslint:disable-next-line:component-selector
