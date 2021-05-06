@@ -1,0 +1,9 @@
+---
+layout: blog-post
+place: 'Rennes, France'
+categories: []
+backgroundImage: url(assets/img/77982.jpg)
+title: Hello from Diverse Coffee
+---
+
+# Hello from Diverse Coffee
