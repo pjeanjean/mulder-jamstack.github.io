@@ -19,12 +19,14 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
     private showphotocapture = false;
     private consigne!: string;
     private tmpsenseconde: number;
-    private questionsOrder?: string;
-    private choicesOrder?: string;
-    private pageOrder?: string;
-    private completedhtml?: string;
-    private startSurveyText?: string;
-    private locale?: string;
+    private questionsOrder!: string;
+    private choicesOrder!: string;
+    private pageOrder!: string;
+    private completedhtml!: string;
+    private startSurveyText!: string;
+    private locale!: string;
+    private urlendpoint?: string;
+    private urlendpointcontentType!: string;
 
     private httpOptions = {
         headers: new HttpHeaders({
@@ -43,6 +45,7 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
         this.completedhtml = "<p><h4>Thanks for completing this form</h4></p>";
         this.startSurveyText = "Start Survey";
         this.locale = "en";
+        this.urlendpointcontentType = "application/json";
     }
 
     // canbesaved = true;
@@ -103,6 +106,14 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
                     if ((metadata as any)?.locale !== undefined) {
                         this.locale = (metadata as any)?.locale;
                     }
+                    if ((metadata as any)?.urlendpoint !== undefined) {
+                        this.urlendpoint = (metadata as any)?.urlendpoint;
+                    }
+                    if (
+                        (metadata as any)?.urlendpointcontentType !== undefined
+                    ) {
+                        this.urlendpointcontentType = (metadata as any)?.urlendpointcontentType;
+                    }
 
                     const p = new SuerveyJSPrinter(
                         this.titre,
@@ -131,21 +142,17 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
             });
     }
 
-    sendData(result: any) {
-        console.log(result);
-    }
+    sendData(result: any) {}
 
     sendFinalData(result: any) {
-        const options = {
-            headers: new HttpHeaders().set("Content-Type", "text/plain"),
-        };
-        this.http
-            .post(
-                "https://script.google.com/macros/s/AKfycbyiSJmQJqg1tevvnuQEKR_kcQW4vekO88Z1z9fCN-1SLWIuogJr_ZXZ1w5m609ptXFPyQ/exec",
-                result,
-                options
-            )
-            .subscribe(
+        if (this.urlendpoint !== undefined) {
+            const options = {
+                headers: new HttpHeaders().set(
+                    "Content-Type",
+                    this.urlendpointcontentType
+                ),
+            };
+            this.http.post(this.urlendpoint, result, options).subscribe(
                 (res: any) => {
                     console.log(res);
                 },
@@ -153,6 +160,7 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
                     console.log(err);
                 }
             );
+        }
     }
 
     ngOnDestroy() {}

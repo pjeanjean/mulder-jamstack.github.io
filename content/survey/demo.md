@@ -9,6 +9,8 @@ pageOrder: 'none'
 completedhtml: '<p><h4>Thanks for completing this form</h4></p>'
 startSurveyText: 'Start the exam'
 locale: 'en'
+urlendpoint: https://script.google.com/macros/s/AKfycbyiSJmQJqg1tevvnuQEKR_kcQW4vekO88Z1z9fCN-1SLWIuogJr_ZXZ1w5m609ptXFPyQ/exec
+urlendpointcontentType: 'text/plain'
 ---
 # (c) Dans une architecture REST, Si l’on utilise JAXRS, modifiez une données côté serveur sur l’appel d’un GET crée
 
