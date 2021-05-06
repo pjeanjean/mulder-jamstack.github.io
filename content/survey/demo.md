@@ -57,7 +57,7 @@ Test ck
 Vous pouvez créer une référence locale HTML d'une balise HTML en utilisant une variable qui commence par le caractère...
 
 - [ ] @
-- [ ] \#
+- [ ] ♯
 - [ ] *
 - [ ] &
 
