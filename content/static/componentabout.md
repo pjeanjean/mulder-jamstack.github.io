@@ -35,7 +35,11 @@ export class AboutComponent implements OnInit {
 The component's html template is composed of the elements of the mulder web site template (namely the *mulder-layout* and *mulder-main-header* components) and content specific to the Web page to be displayed. Below you can view an excerpt of this template. 
 
 ```html
-<mulder-layout><mulder-main-header backgroundImage='url("assets/img/about-bg.jpg")' heading="Olivier Barais" subHeading="Professor @University of Rennes 1 / IRISA / INRIA / B-COM" [siteHeading]="true"></mulder-main-header>
+<mulder-layout>
+    <mulder-main-header backgroundImage='url("assets/img/about-bg.jpg")' 
+      heading="Olivier Barais" 
+      subHeading="Professor @University of Rennes 1 / IRISA / INRIA / B-COM" [siteHeading]="true">
+    </mulder-main-header>
     <!-- # Dr. Olivier Barais   -->
     <div class="container">
         <div itemscope="" itemtype="http://schema.org/Person">
