@@ -1,7 +1,7 @@
 ---
 titre: 'Examen 2021'
 showphotocapture: true
-consigne: 'Demo of what you have to do"
+consigne: 'Demo of what you have to do'
 tmpsenseconde: 3600
 questionsOrder: 'none'
 choicesOrder: 'none'
