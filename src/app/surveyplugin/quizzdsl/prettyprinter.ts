@@ -73,11 +73,14 @@ export class SuerveyJSPrinter {
     isText = false;
     constructor(
         private titre: string,
+        private showphotocapture: boolean,
         private consigne: string,
         private tmpsenseconde: number,
         private questionsOrder?: string,
         private choicesOrder?: string,
-        private completedhtml?: string
+        private completedhtml?: string,
+        private startSurveyText?: string,
+        private locale?: string
     ) {}
 
     printer = matcher<string>({
@@ -120,13 +123,13 @@ export class SuerveyJSPrinter {
         if (res.success) {
             const t = res as Success<Sentence[][]>;
             result = `var exam = {
-      "locale": "fr",
+      "locale": "${this.locale}",
       "title" : "${this.titre}",
       "showProgressBar": "bottom",
       "showTimerPanel": "top",
       "maxTimeToFinish": "${this.tmpsenseconde}",
       "firstPageIsStarted": true,
-      "startSurveyText": "Démarer l'examen",
+      "startSurveyText": "${this.startSurveyText}",
       "questionsOrder": "${this.questionsOrder}",
       "completedHtml": "${this.completedhtml}",
       "pages": [
@@ -135,15 +138,21 @@ export class SuerveyJSPrinter {
             {
               "type": "html",
               "html": \`${this.consigne}\`
-          },
-          {
-            "name": "photo",
-            "type": "photocapture",
-            "title": "Prenez une jolie photo que l' on sache que c'est vous",
-            "isRequired:": true
-        }
-
-      ]
+          }`;
+            if (this.showphotocapture) {
+                result =
+                    result +
+                    `,
+        {
+          "name": "photo",
+          "type": "photocapture",
+          "title": "Prenez une jolie photo que l' on sache que c'est vous",
+          "isRequired:": true
+      }`;
+            }
+            result =
+                result +
+                `]
   },
   {
     "questionsOrder": "${this.questionsOrder}",

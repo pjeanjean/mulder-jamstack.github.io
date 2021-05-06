@@ -50,11 +50,14 @@ export class SurveyDemoComponent implements OnInit, OnDestroy {
     ngOnInit(): void {
         const p = new SuerveyJSPrinter(
             this.titre,
+            true,
             this.consigne,
             this.tmpsenseconde,
             this.questionsOrder,
             this.choicesOrder,
-            this.completedhtml
+            this.completedhtml,
+            "Start the exam",
+            "en"
         );
         this.http
             .get(

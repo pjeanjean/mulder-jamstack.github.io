@@ -817,7 +817,7 @@ export class SuerveyJSPrinter {
       "showTimerPanel": "top",
       "maxTimeToFinish": "${this.tmpsenseconde}",
       "firstPageIsStarted": true,
-      "startSurveyText": "Démarer l'examen",
+      "startSurveyText": "Démarrer l'examen",
       "questionsOrder": "${this.questionsOrder}",
       "completedHtml": "${this.completedhtml}",
       "pages": [
